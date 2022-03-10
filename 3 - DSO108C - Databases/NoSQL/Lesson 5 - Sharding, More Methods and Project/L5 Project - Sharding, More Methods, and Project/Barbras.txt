@@ -1,0 +1,58 @@
+db.Barbras.insertMany([
+    {
+        name:{first:"Henry", last: "Chapelton"},
+        birthday:{$date:"1980-29-09"},
+        address:{street: "9324 E. Vista Way", city: "Tempe", state: "Arizona"},
+        position:{positionName: "Customer Support", Remote: false, Fulltime: true}
+    },
+    {
+        name:{first: "Alex", last: "Miller"},
+        birthday:{$date:"1983-22-11"},
+        address:{street: "244 Price Road", city: "Mesa", state: "Arizona"},
+        position:{positionName: "Customer Support", Remote: false, Fulltime: false}
+    },
+    {
+        name:{first: "Carly", last: "Nielson"},
+        birthday:{$date:"1987-04-08"},
+        address:{street: "678 W. Westward Road", city: "Phoenix", state: "Arizona"},
+        position:{positionName: "Office Manager", Remote: false, Fulltime: true}
+    },
+    {
+        name: {first: "Tom", last:" Tablot"},
+        birthday:{$date:"1989-30-12"},
+        address:{street: "12 Oakland Way", city: "Chandler", state: "Arizona"},
+        position:{positionName: "Inventory Manager", Remote: false, Fulltime: true}
+    },
+    {
+        name:{first: "Henry", last: "Chapelton"},
+        birthday:{$date:"1980-29-09"},
+        address:{street: "9324 E. Vista Way", city: "Tempe", state: "Arizona"},
+        position:{positionName: "Customer Support", Remote: false, Fulltime: true}
+    },
+    {
+        name:{first: "Daisy", last:"Baxter"},
+        birthday:{$date:"1987-09-09"},
+        address:{street: "990 E. 84th St.", city: "Tempe", state: "Arizona"},
+        position:{positionName: "CEO", Remote: false, Fulltime: true}
+    },
+    {
+        name:{first: "William", last: "Coyle"},
+        birthday:{$date:"1991-10-11"},
+        address:{street: "944 W. 16th St.", city: "Phoenix", state: "Arizona"},
+        position:{positionName: "Intern", Remote: false, Fulltime: false}
+    },
+    {
+        name:{first: "Gwen", last: "Harding"},
+        birthday:{$date:"1986-10-11"},
+        address:{street: "234 W. 48th. St.", city: "Phoenix", state: "Arizona"},
+        position:{positionName: "Office Assistant", Remote: false, Fulltime: true}
+    },
+    {
+        name:{first: "Edith", last: "Bates"},
+        birthday:{$date:"1990-28-07"},
+        address:{street: "7 E. 20th Pl.", city: "Chandler", state: "Arizona"},
+        position:{positionName: "Customer Support", Remote: false, Fulltime: true}
+    }
+ ])
+
+db.Barbras.drop()

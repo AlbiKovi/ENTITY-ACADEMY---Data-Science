@@ -1,0 +1,25 @@
+db.cars.find({}).pretty()
+db.cars.drop()
+
+db.cars.createIndex( { price: 1 } )
+db.cars.getIndexes()
+
+db.cars.createIndex({used: 1})
+db.cars.getIndexes()
+
+db.cars.find({ year: { $lt : 2012 }}).pretty()
+db.cars.deleteMany({ year: { $lt : 2012 }})
+
+db.cars.find({make: "BMW"}).pretty()
+db.cars.deleteOne({make: "BMW"})
+db.cars.find({make: "BMW"}).pretty()
+
+db.cars.getIndexes()
+db.cars.dropIndex({used: 1})
+--db.cars.dropIndex(used_1)
+db.cars.getIndexes()
+
+db.cars.createIndex({make: 1})
+db.cars.dropIndex({price: 1})
+db.cars.find({ make: "Volkswagen"}).pretty()
+db.cars.deleteMany({ make: "Volkswagen"})

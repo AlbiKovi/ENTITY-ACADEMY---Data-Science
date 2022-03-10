@@ -1,0 +1,27 @@
+db.inventory.updateOne({item: "journal"}, {$set: {'size.h': 16}})
+db.inventory.find({item: "journal"}).pretty()
+
+db.inventory.updateMany({status: "D"}, {$set: {qty: 50}}, {upsert: true}))
+db.inventory.find({status: "D"}).pretty()
+
+db.inventory.updateOne({item: "paper"}, {$set: {rating: "4 stars"}}, { upsert : true})
+db.inventory.updateOne({item: "paper"}, {$set: {status: "A"}}, { upsert : true})
+db.inventory.updateOne({item: "paper"}, {$set: {rating: "4 stars", status: "A"}}, { upsert: true})
+db.inventory.find({item: "paper"}).pretty()
+
+db.inventory.updateMany({}, {$rename: {'size.h': 'size.height', 'size.w': 'size.width'}})
+db.inventory.find({}).pretty()
+
+db.inventory.updateOne({item: "spiral notebook"}, { $inc: { height: 2, width: 2 } })
+db.inventory.find({item: "spiral notebook"}).pretty()
+
+db.inventory.updateOne({item: "paper"}, {$mul: {height: 3}})
+db.inventory.updateOne({item: "day planner"}, {$mul: {height: 3}})
+db.inventory.find({$or: [{item: "paper"}, {item: "day planner"}]}).pretty()
+
+db.inventory.updateMany({}, {$set: {rating: {numberOfStars: 4, hasBeenRated: true}}}, {upsert: true})
+db.inventory.updateMany({}, {$mul: {qty: 2}})
+db.inventory.updateMany({'size.uom': 'cm'}, {$set:{status: "B"}}, {upsert: true})
+db.inventory.inventory.find({})
+
+mongodb+srv://cluster0.bst2l.mongodb.net/myFirstDatabase --username dbuser

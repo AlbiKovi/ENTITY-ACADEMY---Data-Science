@@ -1,0 +1,24 @@
+db.movies.find({lengthInMin: {$gt: 120} })
+db.movies.find({lengthInMin: {$gt: 120} }).pretty()
+
+db.movies.find({leadActors: {$ne: "Tom Hanks"} })
+db.movies.find({leadActors: {$ne: "Tom Hanks"} }).pretty()
+
+db.movies.find({director: {$eq: "Mel Brooks"} })
+db.movies.find({director: {$eq: "Mel Brooks"} }).pretty()
+
+db.movies.find({genre: {$ne: "Drama"} })
+db.movies.find({genre: {$ne: "Drama"} }).pretty()
+
+db.movies.find({$and: [{lengthInMin:{$gt: 90}}, {lengthInMin:{$lt: 120}}]})
+db.movies.find({$and: [{lengthInMin:{$gt: 90}}, {lengthInMin:{$lt: 120}}]}).pretty()
+
+db.movies.find({$or: [{genre: "Action"}, {genre: "Adventure"}]}, {title: 1})
+db.movies.find({$or: [{genre: "Action"}, {genre: "Adventure"}]}, {title: 1}).pretty()
+
+db.movies.find({genre: {$ne: "Foreign"}})
+db.movies.find({genre: "Comedy"})
+db.movies.find({leadActors: {$ne: "Jodie Foster"}})
+db.movies.find({lengthInMin: {$gt: 120}})
+db.movies.find({$and: [{genre: {$ne: "Foreign"}}, {genre: "Comedy"}, {leadActors: {$ne: "Jodie Foster"}}, {lengthInMin: {$lt: 120}}]})
+db.movies.find({$all: [{genre: {$ne: "Foreign"}}, {genre: "Comedy"}, {leadActors: {$ne: "Jodie Foster"}}, {lengthInMin: {$lt: 120}}]})
