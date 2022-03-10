@@ -1,0 +1,35 @@
+# Lesson 1 Practice Hands-On
+#1
+Name = "What is your name?"
+Age = "How old are you?"
+#Age_Months = "How many months is that?"
+
+#2
+Answer_Name = 'My name is "Billy".'
+Answer_Age = 30
+#Answer_Age_Months = 360
+
+#3
+print(Name)
+print(Answer_Name)
+print(Age)
+print(Answer_Age)
+#print(Age_Months)
+#print(Answer_Age_Months)
+
+#4
+print(Name)
+print(Answer_Name)
+print(Age)
+print(Answer_Age)
+#print(Age_Months)
+#print(Answer_Age_Months)
+
+#5
+my_string = "Python is cool!"
+my_integer = 1
+my_float = 1.11
+
+print(my_string)
+print(my_integer)
+print(my_float)
