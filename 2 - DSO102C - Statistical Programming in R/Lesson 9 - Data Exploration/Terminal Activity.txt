@@ -1,0 +1,32 @@
+Microsoft Windows [Version 10.0.19041.1052]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\alber>md fast
+
+C:\Users\alber>cd fast
+
+C:\Users\alber\fast>md furious
+
+C:\Users\alber\fast>cd furious
+
+C:\Users\alber\fast\furious>md joyride
+
+C:\Users\alber\fast\furious>cd joyride
+
+C:\Users\alber\fast\furious\joyride>type nul > furiosa.txt
+
+C:\Users\alber\fast\furious\joyride>cd ..\..
+
+C:\Users\alber\fast>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 1E7B-DC75
+
+ Directory of C:\Users\alber\fast
+
+06/23/2021  11:11 AM    <DIR>          .
+06/23/2021  11:11 AM    <DIR>          ..
+06/23/2021  11:11 AM    <DIR>          furious
+               0 File(s)              0 bytes
+               3 Dir(s)  166,144,262,144 bytes free
+
+C:\Users\alber\fast>
